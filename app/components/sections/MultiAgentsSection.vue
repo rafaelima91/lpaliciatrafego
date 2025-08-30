@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full flex justify-center bg-white py-24 md:py-24 px-4">
+  <section class="w-full flex justify-center py-24 md:py-24 px-4 bg-white">
     <div class="w-full max-w-6xl flex flex-col md:flex-row items-center justify-center gap-16">
   <!-- Coluna Esquerda -->
   <div class="flex-1 flex flex-col items-start justify-center min-w-0">
