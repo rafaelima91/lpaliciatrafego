@@ -1,5 +1,6 @@
 <template>
-  <section class="w-full flex flex-col items-center justify-center py-24 px-4 bg-gradient-to-b from-primary-100 to-white">
+  <div>
+    <section id="checkout" class="w-full flex flex-col items-center justify-center py-24 px-4 bg-gradient-to-b from-primary-100 to-primary-600">
     <div class="w-full max-w-6xl flex flex-col items-center">
       <h2 class="text-3xl md:text-4xl font-black text-primary-900 font-display mb-2 text-center">Garanta sua Agência com IA no Piloto Automático</h2>
       <p class="text-lg md:text-xl text-primary-800 mb-10 text-center max-w-2xl">Escolha como quer transformar sua operação: aprenda a construir ou receba tudo pronto</p>
@@ -56,7 +57,7 @@
               </div>
             </div>
           </div>
-          <CheckoutButton cor="primary" texto="QUERO APRENDER E IMPLEMENTAR" class="mt-auto" />
+          <CheckoutButton cor="primary" texto="QUERO APRENDER E IMPLEMENTAR" class="mt-auto" @click.prevent="openForm" />
         </div>
         <!-- Card Pronto -->
         <div class="flex-1 min-w-[320px] max-w-md bg-white/90 rounded-2xl shadow-2xl p-8 flex flex-col border border-primary-200">
@@ -111,15 +112,24 @@
               </div>
             </div>
           </div>
-          <CheckoutButton cor="secondary" texto="QUERO A ESTRUTURA PRONTA" class="mt-auto" />
+          <CheckoutButton cor="secondary" texto="QUERO A ESTRUTURA PRONTA" class="mt-auto" @click.prevent="openForm" />
         </div>
       </div>
     </div>
-  </section>
+
+    </section>
+    <CheckoutFormModal ref="formModal" />
+  </div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import CheckoutButton from '~/components/CheckoutButton.vue'
+import CheckoutFormModal from '~/components/CheckoutFormModal.vue'
+const formModal = ref(null)
+function openForm() {
+  formModal.value?.open()
+}
 </script>
 
 <style scoped>
