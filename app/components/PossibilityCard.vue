@@ -1,12 +1,7 @@
 <template>
-  <div class="flex flex-col items-start bg-dark-soft border border-dark-medium rounded-xl p-6 min-w-[240px] max-w-xs shadow-md transition hover:scale-[1.03] hover:shadow-lg">
-    <slot name="icon">
-      <div class="w-10 h-10 mb-4 rounded-lg bg-primary-900/80 flex items-center justify-center">
-        <span class="text-white text-2xl">?</span>
-      </div>
-    </slot>
-    <h3 class="text-lg font-bold text-white mb-1"><slot name="title">Título</slot></h3>
-    <p class="text-base text-secondary-100"><slot name="desc">Descrição do card</slot></p>
+  <div class="flex flex-col items-center bg-[linear-gradient(135deg,_#fffdf7_60%,_#fff7e6_100%)] border border-primary-100 rounded-2xl py-2 px-4 min-w-[208px] max-w-[208px] shadow-lg transition-all hover:scale-[1.04] hover:shadow-2xl gap-1 justify-center">
+    <h3 class="text-xl font-bold text-primary-900 mb-1 text-center font-display"><slot name="title">Título</slot></h3>
+    <p class="text-base text-primary-800 text-center"><slot name="desc">Descrição do card</slot></p>
   </div>
 </template>
 

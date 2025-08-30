@@ -1,24 +1,27 @@
 <template>
   <section class="w-full flex flex-col items-center justify-center py-20 px-4 bg-gradient-to-b from-white to-primary-100">
     <div class="w-full max-w-5xl flex flex-col items-center gap-10">
-      <h2 class="text-3xl md:text-4xl font-display font-bold text-primary-900 text-center mb-2">Interaja com o Agente Orquestrador</h2>
+      <h2 class="text-3xl md:text-4xl font-display font-bold text-primary-900 text-center mb-2">Converse com Alicia no WhatsApp</h2>
       <p class="text-lg md:text-xl text-secondary-700 text-center max-w-2xl mb-6">
-        Peça em linguagem natural o que quiser para o agente orquestrador e veja a automação acontecer em tempo real.
+        Digite como você falaria com seu gestor de tráfego.
       </p>
       <CallAgentBox titulo="Solicitações ao Orquestrador">
         <template #default>
           <div class="flex flex-col gap-4">
             <div class="bg-primary-900/60 border border-primary-400 rounded-lg px-4 py-3">
-              <span class="text-primary-50 font-mono text-base md:text-lg">Suba uma campanha de vendas para do cliente "Y", para seguidores no insta, com orçamento diário de X. Os criativos estão no drive "Z"</span>
+              <span class="text-primary-50 font-mono text-base md:text-lg">"Alicia, crie uma campanha de leads para a Dra. Marina, público feminino 25-45 anos, orçamento R$ 100/dia"</span>
             </div>
             <div class="bg-primary-900/60 border border-primary-400 rounded-lg px-4 py-3">
-                <span class="text-primary-50 font-mono text-base md:text-lg">Qual o custo por lead do cliente "XXX" nas últimas duas semanas?</span>
+                <span class="text-primary-50 font-mono text-base md:text-lg">"Qual o CPL real da clínica Beleza Pura nas últimas 2 semanas?"</span>
             </div>
             <div class="bg-primary-900/60 border border-primary-400 rounded-lg px-4 py-3">
-              <span class="text-primary-50 font-mono text-base md:text-lg">Preciso do relatório do último mês do cliente "YYY"</span>
+              <span class="text-primary-50 font-mono text-base md:text-lg">"Me manda o dossiê completo de julho da Clínica Carioca"</span>
             </div>
             <div class="bg-primary-900/60 border border-primary-400 rounded-lg px-4 py-3">
-              <span class="text-primary-50 font-mono text-base md:text-lg">Pause o anúncio "T" e o conjunto "R" da campanha "J", por favor</span>
+              <span class="text-primary-50 font-mono text-base md:text-lg">"Pause toda a hierarquia da campanha Dia dos Pais. Estoque esgotado."</span>
+            </div>
+            <div class="bg-primary-900/60 border border-primary-400 rounded-lg px-4 py-3">
+              <span class="text-primary-50 font-mono text-base md:text-lg">""Duplique a campanha ID 123456789 com budget de R$ 150/dia""</span>
             </div>
           </div>
         </template>
