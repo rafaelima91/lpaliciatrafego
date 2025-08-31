@@ -32,7 +32,8 @@
 </template>
 
 <script setup>
-import { ref, defineExpose } from 'vue'
+import { ref, defineExpose, watch } from 'vue'
+const props = defineProps({ metodo: String })
 const show = ref(false)
 const nome = ref('')
 const telefone = ref('')
@@ -45,11 +46,32 @@ function open() {
 function close() {
   show.value = false
 }
-function submit() {
-  // Aqui você pode tratar o envio do formulário (ex: API, e-mail, etc)
+async function submit() {
+  const body = {
+    nome: nome.value,
+    telefone: telefone.value,
+    email: email.value,
+    profissao: profissao.value,
+    metodo: props.metodo || ''
+  }
+  await fetch('https://webhooks.qsr.dev.br/webhook/forms-alicia/imersaotp', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  })
+  window.location.href = 'https://pay.kiwify.com.br/GusB6nV'
   close()
 }
 defineExpose({ open, close })
+// Limpa campos ao abrir
+watch(show, (v) => {
+  if (v) {
+    nome.value = ''
+    telefone.value = ''
+    email.value = ''
+    profissao.value = ''
+  }
+})
 </script>
 
 <style scoped>

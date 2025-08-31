@@ -57,7 +57,7 @@
               </div>
             </div>
           </div>
-          <CheckoutButton cor="primary" texto="QUERO APRENDER E IMPLEMENTAR" class="mt-auto" @click.prevent="openForm" />
+          <CheckoutButton cor="primary" texto="QUERO APRENDER E IMPLEMENTAR" class="mt-auto" @click.prevent="() => openForm('aprender')" />
         </div>
         <!-- Card Pronto -->
         <div class="flex-1 min-w-[320px] max-w-md bg-white/90 rounded-2xl shadow-2xl p-8 flex flex-col border border-primary-200">
@@ -112,13 +112,13 @@
               </div>
             </div>
           </div>
-          <CheckoutButton cor="secondary" texto="QUERO A ESTRUTURA PRONTA" class="mt-auto" @click.prevent="openForm" />
+          <CheckoutButton cor="secondary" texto="QUERO A ESTRUTURA PRONTA" class="mt-auto" @click.prevent="() => openForm('estrutura pronta')" />
         </div>
       </div>
     </div>
 
     </section>
-    <CheckoutFormModal ref="formModal" />
+  <CheckoutFormModal ref="formModal" :metodo="metodoSelecionado" />
   </div>
 </template>
 
@@ -127,7 +127,9 @@ import { ref } from 'vue'
 import CheckoutButton from '~/components/CheckoutButton.vue'
 import CheckoutFormModal from '~/components/CheckoutFormModal.vue'
 const formModal = ref(null)
-function openForm() {
+const metodoSelecionado = ref('')
+function openForm(metodo) {
+  metodoSelecionado.value = metodo
   formModal.value?.open()
 }
 </script>
