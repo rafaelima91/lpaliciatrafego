@@ -10,7 +10,7 @@
           <span class="text-primary-900 font-bold text-lg mb-1">DIY - Faça Você Mesmo</span>
           <div class="flex items-end gap-2 mb-2">
             <span class="text-3xl md:text-4xl font-black text-primary-900">R$ 1.997,00</span>
-            <span class="text-primary-700 text-base mb-1">ou 12x de R$ 199,70</span>
+            <span class="text-primary-700 text-base mb-1">ou 12x de R$ 206,54</span>
           </div>
           <span class="block text-primary-800 font-semibold mb-4 mt-2">O que você vai receber:</span>
           <div class="flex flex-col gap-3 mb-6">
