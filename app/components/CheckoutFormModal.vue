@@ -60,12 +60,13 @@ async function submit() {
     body: JSON.stringify(body)
   })
   if ((props.metodo || '').toLowerCase().includes('estrutura')) {
-    // Redireciona para WhatsApp com mensagem personalizada
+    // Redireciona para WhatsApp com mensagem personalizada (estrutura pronta)
     const msg = encodeURIComponent('Quero comprar os fluxos prontos do agente de IA que atua como tráfego pago 🤖')
     window.location.href = `https://wa.me/5521970714152?text=${msg}`
   } else {
-    // Redireciona para Kiwify normalmente
-    window.location.href = 'https://pay.kiwify.com.br/GusB6nV'
+    // Redireciona para WhatsApp com mensagem personalizada (aprender)
+    const msg = encodeURIComponent('Olá! Quero aprender a criar os Agentes de IA que atuam como gestor de tráfego.')
+    window.location.href = `https://wa.me/5521970714152?text=${msg}`
   }
   close()
 }
