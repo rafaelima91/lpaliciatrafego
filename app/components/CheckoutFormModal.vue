@@ -59,7 +59,14 @@ async function submit() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body)
   })
-  window.location.href = 'https://pay.kiwify.com.br/GusB6nV'
+  if ((props.metodo || '').toLowerCase().includes('estrutura')) {
+    // Redireciona para WhatsApp com mensagem personalizada
+    const msg = encodeURIComponent('Quero comprar os fluxos prontos do agente de IA que atua como tráfego pago 🤖')
+    window.location.href = `https://wa.me/5521970714152?text=${msg}`
+  } else {
+    // Redireciona para Kiwify normalmente
+    window.location.href = 'https://pay.kiwify.com.br/GusB6nV'
+  }
   close()
 }
 defineExpose({ open, close })
