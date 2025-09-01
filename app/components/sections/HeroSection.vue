@@ -7,7 +7,7 @@
     <p class="text-lg md:text-2xl text-light-soft max-w-2xl mx-auto animate-fade-in-up animation-delay-200 mb-8">
       O primeiro agente de IA que atua no tráfego pago subindo campanhas, otimizando anúncios, gerando relatórios, trazendo insights de otimização e muito mais
     </p>
-  <VideoPlayer video-id="dQw4w9WgXcQ" class="mx-auto w-full max-w-4xl" />
+  <!-- <VideoPlayer video-id="dQw4w9WgXcQ" class="mx-auto w-full max-w-4xl" /> -->
   <ActionButton texto="Escalar minha operação agora!" class="mt-8 bg-white text-primary-900 border border-primary-500 shadow-primary hover:bg-primary-100 hover:text-primary-950 rounded-lg" />
   </section>
 </template>

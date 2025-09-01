@@ -9,8 +9,7 @@
         <div class="flex-1 min-w-[320px] max-w-md bg-white/90 rounded-2xl shadow-2xl p-8 flex flex-col border border-primary-200">
           <span class="text-primary-900 font-bold text-lg mb-1">DIY - Faça Você Mesmo</span>
           <div class="flex items-end gap-2 mb-2">
-            <span class="text-3xl md:text-4xl font-black text-primary-900">R$ 1.997,00</span>
-            <span class="text-primary-700 text-base mb-1">ou 12x de R$ 206,54</span>
+            <!-- Preço removido conforme solicitado -->
           </div>
           <span class="block text-primary-800 font-semibold mb-4 mt-2">O que você vai receber:</span>
           <div class="flex flex-col gap-3 mb-6">
@@ -63,7 +62,7 @@
         <div class="flex-1 min-w-[320px] max-w-md bg-white/90 rounded-2xl shadow-2xl p-8 flex flex-col border border-primary-200">
           <span class="text-primary-900 font-bold text-lg mb-1">Pronto - Receba Tudo Pronto</span>
           <div class="flex items-end gap-2 mb-2">
-            <span class="text-3xl md:text-4xl font-black text-primary-900">Sob Consulta</span>
+            <!-- Preço removido conforme solicitado -->
           </div>
           <span class="block text-primary-800 font-semibold mb-4 mt-2">O que você vai receber:</span>
           <div class="flex flex-col gap-3 mb-6">
@@ -84,7 +83,7 @@
             <div class="flex items-start gap-3 bg-primary-50 border border-primary-100 rounded-xl p-3 shadow-sm">
               <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center text-primary-700 text-xl font-bold">✓</div>
               <div>
-                <div class="font-bold text-primary-900 leading-tight">Alicia funcionando em 24h</div>
+                <div class="font-bold text-primary-900 leading-tight">Alicia funcionando em 7 dias</div>
                 <div class="text-primary-700 text-sm">Instalação e configuração completas</div>
               </div>
             </div>
