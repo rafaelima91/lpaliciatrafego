@@ -3,6 +3,12 @@
     <div class="max-w-3xl mx-auto">
       <h2 class="text-3xl font-extrabold text-white mb-8 text-center">Perguntas Frequentes</h2>
       <div class="space-y-4">
+        <FaqItem question="Quero comprar apenas os fluxos. Vocês vendem?">
+          Vendemos sim. Entre em contato com nosso time de suporte <a href="https://wa.me/5521973891843?text=Quero%20comprar%20os%20fluxos%20do%20ecossistema%20Alicia%20de%20Trafego%20Pago%20%F0%9F%A4%96" target="_blank" class="underline font-semibold">clicando aqui</a>.
+        </FaqItem>
+        <FaqItem question="Quais são os custos mensais dessa operação?">
+          O custo da VPS é cerca de US$30. O consumo de tokens, mesmo na conta em que mais rodamos, criamos campanhas, otimizamos anúncios e geramos relatórios, nunca ultrapassou US$10 em um mês.
+        </FaqItem>
         <FaqItem question="Funciona para quais objetivos de campanha?">
           Alicia sobe e otimiza qualquer objetivo de campanha no Meta Ads, exceto promoção de App.
         </FaqItem>

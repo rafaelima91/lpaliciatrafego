@@ -7,7 +7,7 @@
       <div class="w-full flex flex-col md:flex-row gap-8 md:gap-12 items-stretch justify-center">
         <!-- Card DIY -->
         <div class="flex-1 min-w-[320px] max-w-md bg-white/90 rounded-2xl shadow-2xl p-8 flex flex-col border border-primary-200">
-          <span class="text-primary-900 font-bold text-lg mb-1">DIY - Faça Você Mesmo</span>
+          <span class="text-primary-900 font-bold text-lg mb-1">Aprenda o passo a passo de como implementar</span>
           <div class="flex items-end gap-2 mb-2">
             <!-- Preço removido conforme solicitado -->
           </div>
@@ -60,7 +60,7 @@
         </div>
         <!-- Card Pronto -->
         <div class="flex-1 min-w-[320px] max-w-md bg-white/90 rounded-2xl shadow-2xl p-8 flex flex-col border border-primary-200">
-          <span class="text-primary-900 font-bold text-lg mb-1">Pronto - Receba Tudo Pronto</span>
+          <span class="text-primary-900 font-bold text-lg mb-1">Implementamos tudo pra você</span>
           <div class="flex items-end gap-2 mb-2">
             <!-- Preço removido conforme solicitado -->
           </div>

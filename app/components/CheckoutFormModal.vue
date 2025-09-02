@@ -64,9 +64,8 @@ async function submit() {
     const msg = encodeURIComponent('Quero comprar os fluxos prontos do agente de IA que atua como tráfego pago 🤖')
     window.location.href = `https://wa.me/5521970714152?text=${msg}`
   } else {
-    // Redireciona para WhatsApp com mensagem personalizada (aprender)
-    const msg = encodeURIComponent('Olá! Quero aprender a criar os Agentes de IA que atuam como gestor de tráfego.')
-    window.location.href = `https://wa.me/5521970714152?text=${msg}`
+    // Redireciona para checkout da Comunidade Alicia (aprender a implementar)
+    window.location.href = 'https://pay.kiwify.com.br/GusB6nV'
   }
   close()
 }
