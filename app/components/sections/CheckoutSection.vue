@@ -56,7 +56,7 @@
               </div>
             </div>
           </div>
-          <CheckoutButton cor="primary" texto="QUERO APRENDER E IMPLEMENTAR" class="mt-auto" @click.prevent="() => openForm('aprender')" />
+          <CheckoutButton cor="primary" texto="QUERO APRENDER A IMPLEMENTAR" class="mt-auto" @click.prevent="() => openForm('aprender')" />
         </div>
         <!-- Card Pronto -->
         <div class="flex-1 min-w-[320px] max-w-md bg-white/90 rounded-2xl shadow-2xl p-8 flex flex-col border border-primary-200">

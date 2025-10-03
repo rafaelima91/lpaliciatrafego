@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-const phone = '5521973891843'
+const phone = '5521970714152'
 const msg = encodeURIComponent('Ola quero saber mais sobre o ecossistema de trafego')
 const whatsUrl = `https://wa.me/${phone}?text=${msg}`
 </script>

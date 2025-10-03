@@ -65,7 +65,7 @@ async function submit() {
     window.location.href = `https://wa.me/5521970714152?text=${msg}`
   } else {
     // Redireciona para checkout da Comunidade Alicia (aprender a implementar)
-    window.location.href = 'https://pay.kiwify.com.br/GusB6nV'
+    window.location.href = 'https://pay.kiwify.com.br/F3SBPAY'
   }
   close()
 }
