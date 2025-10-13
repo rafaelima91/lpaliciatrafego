@@ -3,7 +3,7 @@
     <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md relative">
       <button @click="close" class="absolute top-4 right-4 text-gray-400 hover:text-primary-600 text-2xl font-bold">&times;</button>
       <h3 class="text-2xl font-bold text-primary-900 mb-6 text-center">Quero saber mais</h3>
-      <form @submit.prevent="submit">
+      <form id="form-aliciagestora" @submit.prevent="submit">
         <div class="mb-4">
           <label class="block text-primary-900 font-semibold mb-1">Nome</label>
           <input v-model="nome" type="text" required class="w-full border border-primary-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-400" />
@@ -54,11 +54,24 @@ async function submit() {
     profissao: profissao.value,
     metodo: props.metodo || ''
   }
+  
+  // Dispara evento para GTM
+  if (typeof window !== 'undefined' && window.dataLayer) {
+    window.dataLayer.push({
+      event: 'form_submit',
+      form_name: 'form-aliciagestora',
+      form_method: props.metodo || '',
+      user_name: nome.value,
+      user_profession: profissao.value
+    })
+  }
+  
   await fetch('https://webhooks.qsr.dev.br/webhook/forms-alicia/imersaotp', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body)
   })
+  
   if ((props.metodo || '').toLowerCase().includes('estrutura')) {
     // Redireciona para WhatsApp com mensagem personalizada (estrutura pronta)
     const msg = encodeURIComponent('Quero comprar os fluxos prontos do agente de IA que atua como tráfego pago 🤖')
