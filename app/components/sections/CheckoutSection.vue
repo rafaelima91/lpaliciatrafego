@@ -6,12 +6,23 @@
       <p class="text-lg md:text-xl text-primary-800 mb-10 text-center max-w-2xl">Escolha como quer transformar sua operação: aprenda a construir ou receba tudo pronto</p>
       <div class="w-full flex flex-col md:flex-row gap-8 md:gap-12 items-stretch justify-center">
         <!-- Card DIY -->
-        <div class="flex-1 min-w-[320px] max-w-md bg-white/90 rounded-2xl shadow-2xl p-8 flex flex-col border border-primary-200">
-          <span class="text-primary-900 font-bold text-lg mb-1">Aprenda o passo a passo de como implementar</span>
-          <div class="flex items-end gap-2 mb-2">
-            <!-- Preço removido conforme solicitado -->
+        <div class="flex-1 min-w-[320px] max-w-md bg-white/90 rounded-2xl shadow-2xl p-8 flex flex-col border border-primary-200 relative">
+          <!-- Badge -->
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+            <span class="bg-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wide shadow-lg whitespace-nowrap">VIDEO AULAS + TEMPLATES</span>
           </div>
-          <span class="block text-primary-800 font-semibold mb-4 mt-2">O que você vai receber:</span>
+          
+          <div class="mt-4">
+            <span class="text-primary-900 font-bold text-lg mb-1">Aprenda o passo a passo</span>
+            
+            <!-- Preço -->
+            <div class="flex items-end gap-4 mb-4 mt-4">
+              <div class="text-4xl font-black text-primary-900">R$ 997</div>
+              <div class="text-primary-700 text-sm">à vista ou 12x de R$ 103,11</div>
+            </div>
+            
+            <span class="block text-primary-800 font-semibold mb-4 mt-2">O que você vai receber:</span>
+          </div>
           <div class="flex flex-col gap-3 mb-6">
             <div class="flex items-start gap-3 bg-primary-50 border border-primary-100 rounded-xl p-3 shadow-sm">
               <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center text-primary-700 text-xl font-bold">✓</div>
@@ -59,12 +70,16 @@
           <CheckoutButton cor="primary" texto="QUERO APRENDER A IMPLEMENTAR" class="mt-auto" @click.prevent="() => openForm('aprender')" />
         </div>
         <!-- Card Pronto -->
-        <div class="flex-1 min-w-[320px] max-w-md bg-white/90 rounded-2xl shadow-2xl p-8 flex flex-col border border-primary-200">
-          <span class="text-primary-900 font-bold text-lg mb-1">Implementamos tudo pra você</span>
-          <div class="flex items-end gap-2 mb-2">
-            <!-- Preço removido conforme solicitado -->
+        <div class="flex-1 min-w-[320px] max-w-md bg-white/90 rounded-2xl shadow-2xl p-8 flex flex-col border border-primary-200 relative">
+          <!-- Badge -->
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+            <span class="bg-yellow-500 text-primary-900 px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wide shadow-lg whitespace-nowrap">PREÇO SOB CONSULTA</span>
           </div>
-          <span class="block text-primary-800 font-semibold mb-4 mt-2">O que você vai receber:</span>
+          
+          <div class="mt-4">
+            <span class="text-primary-900 font-bold text-lg mb-1">Implementamos tudo pra você</span>
+            <span class="block text-primary-800 font-semibold mb-4 mt-2">O que você vai receber:</span>
+          </div>
           <div class="flex flex-col gap-3 mb-6">
             <div class="flex items-start gap-3 bg-primary-50 border border-primary-100 rounded-xl p-3 shadow-sm">
               <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center text-primary-700 text-xl font-bold">✓</div>
