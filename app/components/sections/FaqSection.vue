@@ -4,7 +4,7 @@
       <h2 class="text-3xl font-extrabold text-white mb-8 text-center">Perguntas Frequentes</h2>
       <div class="space-y-4">
         <FaqItem question="Quero comprar apenas os fluxos. Vocês vendem?">
-          Vendemos sim. Entre em contato com nosso time de suporte <a href="https://wa.me/5521970714152?text=Quero%20comprar%20os%20fluxos%20do%20ecossistema%20Alicia%20de%20Trafego%20Pago%20%F0%9F%A4%96" target="_blank" class="underline font-semibold">clicando aqui</a>.
+          Vendemos sim. Entre em contato com nosso time de suporte <a href="https://wa.me/5521973891843?text=Vim%20do%20site%20e%20quero%20comprar%20os%20fluxos%20do%20ecossistema%20Alicia%20de%20Trafego%20Pago" target="_blank" class="underline font-semibold">clicando aqui</a>.
         </FaqItem>
         <FaqItem question="Quais são os custos mensais dessa operação?">
           O custo da VPS é cerca de US$30. O consumo de tokens, mesmo na conta em que mais rodamos, criamos campanhas, otimizamos anúncios e geramos relatórios, nunca ultrapassou US$10 em um mês.
